@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKE YOUR REGISTRATION</title>
+</head>
+<body>
+    <form method="POST" action="/registration">
+
+        <div>
+        <h3><%=messages%></h3>
+        </div>
+        <label for="username">username</label> <br>
+        <input type="text" name="username" id="username"> <br>
+        <label for="password">Password</label> <br>
+        <input type="password" name="password" id="password"><br>
+
+       <label for="fullname">Fullname</label> <br>
+        <input type="text" name="fullname" id="fullname"> <br>
+        <label for="age">Age</label> <br>
+        <input type="text" name="age" id="age"><br>
+
+        <label for="passport">passport</label> <br>
+        <input type="text" name="passport" id="passport"><br>
+        
+        <label for="course">Select a course:</label><br>
+            <select id="course" name="course">
+                <option value="select">select</option>
+                <option value="webdesign">webdesign</option>
+                <option value="ui/ux">ui/ux</option>
+                <option value="cybersecurity">cybersecurity</option>
+                <option value="appdevelopment">mobile-appdev</option>    
+            </select><br>
+        <button>submit</button>
+        
+    </form>
+</body>
+</html>
